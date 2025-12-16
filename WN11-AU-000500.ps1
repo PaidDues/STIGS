@@ -20,10 +20,12 @@
     PowerShell Ver. : 
 
 .USAGE
-    Put any usage instructions here.
-    Example syntax:
+    Run as administrator.
+    Example:
     PS C:\> .\STIG-ID-WN11-AU-000500.ps1 
 #>
+
+#Requires -RunAsAdministrator
 
 $Path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"
 
